@@ -1,0 +1,142 @@
+.section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__love-user {
+  width: 280px;
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 0px 2px 16px #a5bcd2;
+  border-radius: 6px;
+  display: flex;
+  padding: 10px;
+
+  .one {
+    padding-right: 10px;
+
+    .one_icon {
+      width: 25px;
+      height: 23px;
+
+      &:hover {
+        cursor: pointer;
+        color: #8f96d3;
+      }
+    }
+  }
+
+  .two {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+
+    span {
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      font-weight: bold;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 360px;
+  padding: 10px;
+}
+
+.card_img {
+  width: 25px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  &:hover {
+    cursor: pointer;
+    color: #8f96d3;
+  }
+}
+
+.card__avatar {
+  width: 84px;
+  height: 84px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  margin: 10px auto;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 10px #8fb1d3;
+  }
+
+  .card-img-top {
+    max-width: 100%;
+    transform: rotate(-45deg) scale(1.42);
+  }
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-text {
+  border-bottom: 2px solid rgba(122, 143, 165, 0.4);
+  padding-top: 11px;
+
+  .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+  }
+
+  span {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #7a8fa5;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    width: 146px;
+    font-size: 20px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.pagination-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background: #ffffff;
+  font-size: 20px;
+  transition: all 0.2s;
+  color: #7a8fa5;
+
+  &:hover {
+    color: #000;
+    cursor: pointer;
+  }
+}

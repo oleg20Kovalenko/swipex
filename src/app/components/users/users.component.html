@@ -1,0 +1,58 @@
+<section class="section">
+  <div class="container">
+    <div class="section__love-user mt-3">
+      <div class="one">
+        <svg class="one_icon">
+          <use xlink:href="./assets/heart-regular.svg#heart"></use>
+        </svg>
+      </div>
+      <div class="two">
+        <p>Developed With Love By: <span>George Bluth</span></p>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col mb-4" *ngFor="let user of usersPage.data">
+        <div class="card">
+          <svg class="card_img">
+            <use xlink:href="./assets/envelope-regular.svg#message"></use>
+          </svg>
+          <div class="card__avatar"><img src="{{ user.avatar }}" class="card-img-top" alt="..." /></div>
+
+          <div class="card-body">
+            <div class="card-text">
+              <div class="text"><span>id:</span>
+                <p>{{ user.id }}</p>
+              </div>
+            </div>
+            <div class="card-text">
+              <div class="text"><span>email:</span>
+                <p> {{ user.email }}</p>
+              </div>
+            </div>
+            <div class="card-text">
+              <div class="text"><span>first_name:</span>
+                <p>{{ user.first_name }}</p>
+              </div>
+            </div>
+            <div class="card-text">
+              <div class="text"><span>last_name:</span>
+                <p> {{ user.last_name }}</p>
+              </div>
+            </div>
+            <div class="card-text">
+              <div class="text"><span>avatar:</span>
+                <p>{{ user.avatar }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pagination-section">
+      <div *ngFor="let page of pagination" class="pagination-element"
+        [class.pagination-current]="page === usersPage.page" (click)="changePage(page)">
+        {{ page }}
+      </div>
+    </div>
+  </div>
+</section>
