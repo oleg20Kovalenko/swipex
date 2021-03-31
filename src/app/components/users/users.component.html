@@ -48,7 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="pagination-section">
+    <div class="pagination-section mb-4">
       <div *ngFor="let page of pagination" class="pagination-element"
         [class.pagination-current]="page === usersPage.page" (click)="changePage(page)">
         {{ page }}
